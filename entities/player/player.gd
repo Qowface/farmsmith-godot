@@ -39,3 +39,8 @@ func move(dir):
 	if !ray.is_colliding():
 		position += INPUTS[dir] * TILE_SIZE
 		moved.emit()
+		return
+	
+	var target = ray.get_collider()
+	if target and target.has_method("interact"):
+		target.interact()
