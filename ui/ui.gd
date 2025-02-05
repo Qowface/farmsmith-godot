@@ -19,8 +19,10 @@ func _process(delta: float) -> void:
 func show_text_box(text: String) -> void:
 	text_box_label.text = text
 	text_box.show()
+	GlobalSignals.ui_toggled.emit(true)
 
 
 func hide_text_box() -> void:
 	text_box.hide()
 	text_box_label.text = ""
+	GlobalSignals.ui_toggled.emit(false)
