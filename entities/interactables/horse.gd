@@ -1,5 +1,8 @@
 extends StaticBody2D
 
 
+@export var dialogue_starting: Dialogue
+
+
 func interact():
-	print("Neigh!")
+	GlobalSignals.show_dialogue.emit(dialogue_starting)
