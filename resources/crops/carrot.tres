@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Crop" load_steps=2 format=3 uid="uid://jy7o8y8wmkaa"]
+
+[ext_resource type="Script" path="res://resources/crops/crop.gd" id="1_lt7lr"]
+
+[resource]
+script = ExtResource("1_lt7lr")
+name = "carrot"
+seed_price = 5
+crop_price = 10
