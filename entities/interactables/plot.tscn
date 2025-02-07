@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdyj2i7gi1pde"]
+
+[ext_resource type="Texture2D" uid="uid://co7b4bi0rinm" path="res://assets/sprites/plot.png" id="1_ogi4j"]
+[ext_resource type="Script" path="res://entities/interactables/plot.gd" id="1_yj385"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x37h1"]
+size = Vector2(8, 8)
+
+[node name="Plot" type="StaticBody2D"]
+script = ExtResource("1_yj385")
+
+[node name="PlotSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_ogi4j")
+centered = false
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_x37h1")
+
+[node name="CropSprite" type="Sprite2D" parent="."]
+centered = false

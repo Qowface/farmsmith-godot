@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dts50wmo2e3aj"]
+
+[ext_resource type="Script" path="res://entities/interactables/house.gd" id="1_scrrm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flxdp"]
+size = Vector2(8, 8)
+
+[node name="House" type="StaticBody2D"]
+script = ExtResource("1_scrrm")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_flxdp")

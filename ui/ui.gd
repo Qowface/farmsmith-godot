@@ -4,6 +4,7 @@ extends CanvasLayer
 var current_dialogue: Dialogue
 var current_line: int
 
+@onready var ui_background: ColorRect = $UIBackground
 @onready var text_box: Control = $TextBox
 @onready var text_box_label: Label = $TextBox/TextBoxBG/TextBoxLabel
 
@@ -23,13 +24,16 @@ func _process(delta: float) -> void:
 			next_dialogue_line()
 
 
-func show_text_box(text: String) -> void:
+func show_text_box(text: String, dark_bg: bool = false) -> void:
 	text_box_label.text = text
 	text_box.show()
+	if dark_bg:
+		ui_background.show()
 	GlobalSignals.ui_toggled.emit(true)
 
 
 func hide_text_box() -> void:
+	ui_background.hide()
 	text_box.hide()
 	text_box_label.text = ""
 	GlobalSignals.ui_toggled.emit(false)
