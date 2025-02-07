@@ -1,8 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cpyqc6cha06bm"]
+[gd_scene load_steps=7 format=3 uid="uid://cpyqc6cha06bm"]
 
 [ext_resource type="Script" path="res://entities/interactables/horse.gd" id="1_i71qp"]
 [ext_resource type="Texture2D" uid="uid://bdhpiwwxpa26p" path="res://assets/sprites/horse.png" id="1_ywu01"]
 [ext_resource type="Resource" uid="uid://c1gmy8bb7eeor" path="res://resources/dialogues/horse_1.tres" id="2_2uscj"]
+[ext_resource type="Resource" uid="uid://cjwbhut8s7eui" path="res://resources/dialogues/horse_2.tres" id="3_gtdmk"]
+[ext_resource type="Resource" uid="uid://c11q1fmv6ct4j" path="res://resources/dialogues/horse_3.tres" id="4_004e4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_34h33"]
 size = Vector2(8, 8)
@@ -10,6 +12,8 @@ size = Vector2(8, 8)
 [node name="Horse" type="StaticBody2D"]
 script = ExtResource("1_i71qp")
 dialogue_starting = ExtResource("2_2uscj")
+dialogue_plant = ExtResource("3_gtdmk")
+dialogue_axe = ExtResource("4_004e4")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_ywu01")

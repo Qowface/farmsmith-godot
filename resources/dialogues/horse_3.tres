@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://c11q1fmv6ct4j"]
+
+[ext_resource type="Script" path="res://resources/dialogues/dialogue.gd" id="1_na3gf"]
+
+[resource]
+script = ExtResource("1_na3gf")
+lines = Array[String](["yummy! thank
+you! here,", "take these
+odd seeds!", "[axe seed
+get!]"])
