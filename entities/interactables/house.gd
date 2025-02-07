@@ -1,6 +1,9 @@
 extends StaticBody2D
 
 
+@export_multiline var sleep_text: String
+
+
 func interact():
-	GlobalSignals.show_text_box.emit("you sleep for\nthe night", true)
+	GlobalSignals.show_text_box.emit(sleep_text, true)
 	GlobalSignals.day_ended.emit()

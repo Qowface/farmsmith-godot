@@ -4,6 +4,7 @@ extends StaticBody2D
 @export var dialogue_starting: Dialogue
 @export var dialogue_plant: Dialogue
 @export var dialogue_axe: Dialogue
+@export var text_neigh: String
 
 var given_carrot_seed: bool = false
 var given_carrot: bool = false
@@ -23,4 +24,4 @@ func interact():
 			Inventory.crops[Crops.CARROT] -= 1
 			Inventory.axe_seed = true
 	else:
-		GlobalSignals.show_text_box.emit("neigh!")
+		GlobalSignals.show_text_box.emit(text_neigh)

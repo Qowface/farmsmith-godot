@@ -14,6 +14,7 @@ script = ExtResource("1_i71qp")
 dialogue_starting = ExtResource("2_2uscj")
 dialogue_plant = ExtResource("3_gtdmk")
 dialogue_axe = ExtResource("4_004e4")
+text_neigh = "neigh!"
 
 [node name="Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("1_ywu01")
