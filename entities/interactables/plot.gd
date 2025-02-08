@@ -23,10 +23,9 @@ func interact():
 			plant(Crops.AXE)
 			Inventory.axe_seed = false
 			GlobalSignals.show_text_box.emit("axe seed\nplanted!")
-		elif Inventory.seeds[Crops.CARROT] >= 1:
-			plant(Crops.CARROT)
-			Inventory.seeds[Crops.CARROT] -= 1
-			GlobalSignals.show_text_box.emit("carrot seed\nplanted!")
+		else:
+			# Open UI to plant standard crop
+			GlobalSignals.start_planting.emit(self)
 	elif crop_stage == 1:
 		# Still growing
 		GlobalSignals.show_text_box.emit(str(crop.name) + " seed")

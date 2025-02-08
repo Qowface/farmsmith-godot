@@ -1,9 +1,13 @@
-[gd_resource type="Resource" script_class="Crop" load_steps=2 format=3 uid="uid://bufb78wr1sqln"]
+[gd_resource type="Resource" script_class="Crop" load_steps=4 format=3 uid="uid://bufb78wr1sqln"]
 
+[ext_resource type="Texture2D" uid="uid://bqahlv7xmh2te" path="res://assets/sprites/crops/tomato.png" id="1_keo43"]
 [ext_resource type="Script" path="res://resources/crops/crop.gd" id="1_ydxcb"]
+[ext_resource type="Texture2D" uid="uid://bs4f73a8mtsor" path="res://assets/sprites/crops/tomato_seed.png" id="3_5laf7"]
 
 [resource]
 script = ExtResource("1_ydxcb")
 name = "tomato"
 seed_price = 10
 crop_price = 20
+seed_sprite = ExtResource("3_5laf7")
+crop_sprite = ExtResource("1_keo43")
