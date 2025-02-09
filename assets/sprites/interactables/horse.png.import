@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtijsaw1iy0ou"
-path="res://.godot/imported/tree.png-15cb16b197553088007c6ba3ce2f75b0.ctex"
+uid="uid://bdhpiwwxpa26p"
+path="res://.godot/imported/horse.png-f5b71b1c73c229bf9e4b17a8ba7bc342.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/tree.png"
-dest_files=["res://.godot/imported/tree.png-15cb16b197553088007c6ba3ce2f75b0.ctex"]
+source_file="res://assets/sprites/interactables/horse.png"
+dest_files=["res://.godot/imported/horse.png-f5b71b1c73c229bf9e4b17a8ba7bc342.ctex"]
 
 [params]
 
