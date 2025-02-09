@@ -9,6 +9,8 @@ const CORN: Crop = preload("res://resources/crops/corn.tres")
 
 # Tool crops
 const AXE: Crop = preload("res://resources/crops/axe.tres")
+const PICK: Crop = preload("res://resources/crops/pick.tres")
+const ROD: Crop = preload("res://resources/crops/rod.tres")
 
 # Collections
 const CROPS = [

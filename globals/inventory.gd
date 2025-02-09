@@ -16,3 +16,7 @@ var crops = {
 }
 var axe_seed: bool = false
 var axe: bool = false
+var pick_seed: bool = false
+var pick: bool = false
+var rod_seed: bool = false
+var rod: bool = false

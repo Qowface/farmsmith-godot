@@ -23,6 +23,14 @@ func interact():
 			plant(Crops.AXE)
 			Inventory.axe_seed = false
 			GlobalSignals.show_text_box.emit("axe seed\nplanted!")
+		elif Inventory.pick_seed:
+			plant(Crops.PICK)
+			Inventory.pick_seed = false
+			GlobalSignals.show_text_box.emit("pick seed\nplanted!")
+		elif Inventory.rod_seed:
+			plant(Crops.ROD)
+			Inventory.rod_seed = false
+			GlobalSignals.show_text_box.emit("rod seed\nplanted!")
 		else:
 			# Open UI to plant standard crop
 			GlobalSignals.start_planting.emit(self)
@@ -51,6 +59,10 @@ func harvest():
 		Inventory.crops[crop] += 1
 	elif crop == Crops.AXE:
 		Inventory.axe = true
+	elif crop == Crops.PICK:
+		Inventory.pick = true
+	elif crop == Crops.ROD:
+		Inventory.rod = true
 	
 	GlobalSignals.show_text_box.emit(str(crop.name) + "\nget!")
 	crop = null
