@@ -1,0 +1,26 @@
+[gd_scene load_steps=8 format=3 uid="uid://cs02s3t42r67v"]
+
+[ext_resource type="Script" path="res://entities/interactables/frog.gd" id="1_u3iu7"]
+[ext_resource type="Texture2D" uid="uid://dsffiyss3ye38" path="res://assets/sprites/interactables/frog.png" id="1_ue4aa"]
+[ext_resource type="Texture2D" uid="uid://bvoink52jcoyu" path="res://assets/sprites/interactables/frog_boots.png" id="2_wlwgl"]
+[ext_resource type="Resource" uid="uid://im6ofwodokd8" path="res://resources/dialogues/frog_default.tres" id="3_md1jp"]
+[ext_resource type="Resource" uid="uid://cgkcjx6sh01y" path="res://resources/dialogues/frog_found_boots.tres" id="4_epa6g"]
+[ext_resource type="Resource" uid="uid://blb0f2qgso4d5" path="res://resources/dialogues/frog_you_won.tres" id="5_4s440"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4e4uc"]
+size = Vector2(8, 8)
+
+[node name="Frog" type="StaticBody2D"]
+script = ExtResource("1_u3iu7")
+boots_sprite = ExtResource("2_wlwgl")
+dialogue_default = ExtResource("3_md1jp")
+dialogue_found_boots = ExtResource("4_epa6g")
+dialogue_you_won = ExtResource("5_4s440")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_ue4aa")
+centered = false
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_4e4uc")

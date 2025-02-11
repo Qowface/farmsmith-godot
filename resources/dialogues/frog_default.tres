@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://im6ofwodokd8"]
+
+[ext_resource type="Script" path="res://resources/dialogues/dialogue.gd" id="1_b02yu"]
+
+[resource]
+script = ExtResource("1_b02yu")
+lines = Array[String](["i'm a frog!
+and i lost", "my boots in
+the lake to", "the south...
+if you", "happen to go
+that way", "and have a
+way to fish", "them out,
+can you try", "to retrieve
+them? Ç"])

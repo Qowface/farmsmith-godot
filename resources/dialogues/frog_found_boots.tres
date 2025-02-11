@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://cgkcjx6sh01y"]
+
+[ext_resource type="Script" path="res://resources/dialogues/dialogue.gd" id="1_m58q0"]
+
+[resource]
+script = ExtResource("1_m58q0")
+lines = Array[String](["you found my
+boots!", "i think that
+means you", "basically won
+the game!"])
