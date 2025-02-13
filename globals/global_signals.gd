@@ -27,3 +27,9 @@ signal day_ended
 # Emitters: Plot
 # Listeners: PlantUI
 signal start_planting(plot: Plot)
+
+
+# Emit to bring up shop UI
+# Emitters: 
+# Listeners: ShopUI
+signal start_shopping(is_selling: bool)
