@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://csmasn0e1osr0"]
+
+[ext_resource type="Script" path="res://entities/interactables/shop.gd" id="1_qx5ca"]
+[ext_resource type="Texture2D" uid="uid://b10iaodwpepqw" path="res://assets/sprites/interactables/frog_blue.png" id="2_4vkei"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7eb0i"]
+size = Vector2(8, 8)
+
+[node name="Shop" type="StaticBody2D"]
+script = ExtResource("1_qx5ca")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_4vkei")
+centered = false
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_7eb0i")
