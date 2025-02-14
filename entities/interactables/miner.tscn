@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2yimbd1nrsib"]
+
+[ext_resource type="Script" path="res://entities/interactables/miner.gd" id="1_t4bro"]
+[ext_resource type="Resource" uid="uid://fucf78eww8e" path="res://resources/dialogues/miner_starting.tres" id="2_5gitn"]
+[ext_resource type="Resource" uid="uid://bx0lt33d1lhsr" path="res://resources/dialogues/miner_no_gold.tres" id="3_poihc"]
+[ext_resource type="Resource" uid="uid://5mc21wi7h6vj" path="res://resources/dialogues/miner_give_gold.tres" id="4_5hkop"]
+[ext_resource type="Texture2D" uid="uid://bjsgpxvfkwgpg" path="res://assets/sprites/interactables/miner.png" id="5_m0otj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4llpc"]
+size = Vector2(8, 8)
+
+[node name="Miner" type="StaticBody2D"]
+script = ExtResource("1_t4bro")
+dialogue_starting = ExtResource("2_5gitn")
+dialogue_no_gold = ExtResource("3_poihc")
+dialogue_give_gold = ExtResource("4_5hkop")
+text_thanks = "thanks for
+the gold!"
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("5_m0otj")
+centered = false
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_4llpc")
