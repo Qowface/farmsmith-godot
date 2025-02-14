@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://cawrl7swmg8yr"]
+
+[ext_resource type="Script" path="res://resources/dialogues/dialogue.gd" id="1_lr26t"]
+
+[resource]
+script = ExtResource("1_lr26t")
+lines = Array[String](["thanks again
+for saving", "me. by the
+way, the", "best spot to
+fish is", "right off the
+end of the", "dock at the
+lake right", "outside this
+cave!"])

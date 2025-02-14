@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Dialogue" load_steps=2 format=3 uid="uid://cchjvnxa1pyix"]
+
+[ext_resource type="Script" path="res://resources/dialogues/dialogue.gd" id="1_74ith"]
+
+[resource]
+script = ExtResource("1_74ith")
+lines = Array[String](["you saved me!
+i was", "exploring the
+cave and", "these rocks
+fell down.", "oh the eye
+and leg?", "lost them to
+a goldfish.", "a big one.
+anyway,", "take these
+seeds. they", "grow into a
+fishing", "rod!", "[rod seeds
+get!]"])

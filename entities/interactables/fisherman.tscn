@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://bfr5dqqfr6p5p"]
+
+[ext_resource type="Script" path="res://entities/interactables/fisherman.gd" id="1_52du0"]
+[ext_resource type="Resource" uid="uid://cchjvnxa1pyix" path="res://resources/dialogues/fisherman_saved.tres" id="2_6gpk2"]
+[ext_resource type="Texture2D" uid="uid://cr66dd1a5y88a" path="res://assets/sprites/interactables/fisherman.png" id="2_smlvv"]
+[ext_resource type="Resource" uid="uid://cawrl7swmg8yr" path="res://resources/dialogues/fisherman_thanks.tres" id="3_5wbrw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jqhr1"]
+size = Vector2(8, 8)
+
+[node name="Fisherman" type="StaticBody2D"]
+script = ExtResource("1_52du0")
+dialogue_saved = ExtResource("2_6gpk2")
+dialogue_thanks = ExtResource("3_5wbrw")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_smlvv")
+centered = false
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_jqhr1")
