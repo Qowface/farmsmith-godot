@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://mgou5xuwyr3h"]
+
+[ext_resource type="Script" path="res://entities/interactables/water.gd" id="1_1jx1y"]
+[ext_resource type="Resource" uid="uid://bo8dvlu5g4mhu" path="res://resources/dialogues/water_boots.tres" id="2_ie702"]
+[ext_resource type="Resource" uid="uid://do7sumh2vudf8" path="res://resources/dialogues/water_no_bite.tres" id="3_dlunr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxcm0"]
+size = Vector2(8, 8)
+
+[node name="Water" type="StaticBody2D"]
+script = ExtResource("1_1jx1y")
+boots_dialogue = ExtResource("2_ie702")
+no_bite_dialogue = ExtResource("3_dlunr")
+no_rod_text = "you could
+fish here"
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_fxcm0")
