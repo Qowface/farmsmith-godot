@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b43iytsnn71s2"]
+[gd_scene load_steps=6 format=3 uid="uid://b43iytsnn71s2"]
 
 [ext_resource type="FontFile" uid="uid://b1qa2t5gavgfh" path="res://assets/fonts/pico-8-wide-upper.ttf" id="1_o4jsc"]
 [ext_resource type="Script" path="res://ui/ui.gd" id="1_t31v4"]
 [ext_resource type="PackedScene" uid="uid://digpweu7qxuwv" path="res://ui/plant_ui.tscn" id="3_ftwxw"]
 [ext_resource type="PackedScene" uid="uid://csrgfjighsjct" path="res://ui/shop_ui.tscn" id="4_tlqsq"]
+[ext_resource type="PackedScene" uid="uid://y6j4dpi11hm0" path="res://ui/inventory_ui.tscn" id="5_oc3ud"]
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_t31v4")
@@ -65,4 +66,7 @@ text = "Î"
 visible = false
 
 [node name="ShopUI" parent="." instance=ExtResource("4_tlqsq")]
+visible = false
+
+[node name="InventoryUI" parent="." instance=ExtResource("5_oc3ud")]
 visible = false

@@ -1,0 +1,357 @@
+[gd_scene load_steps=12 format=3 uid="uid://y6j4dpi11hm0"]
+
+[ext_resource type="Script" path="res://ui/inventory_ui.gd" id="1_blrk1"]
+[ext_resource type="FontFile" uid="uid://b1qa2t5gavgfh" path="res://assets/fonts/pico-8-wide-upper.ttf" id="2_h84dd"]
+[ext_resource type="Texture2D" uid="uid://dhrg6jtkydleg" path="res://assets/sprites/crops/carrot.png" id="3_10k6y"]
+[ext_resource type="Texture2D" uid="uid://b3yu7aqnkxxgf" path="res://assets/sprites/ui/gold.png" id="4_7hes1"]
+[ext_resource type="Texture2D" uid="uid://cohtlso5twt8a" path="res://assets/sprites/crops/carrot_seed.png" id="4_lq4wi"]
+[ext_resource type="Texture2D" uid="uid://ckuplj0606rni" path="res://assets/sprites/crops/radish_seed.png" id="5_pqhat"]
+[ext_resource type="Texture2D" uid="uid://bs4f73a8mtsor" path="res://assets/sprites/crops/tomato_seed.png" id="6_i62ka"]
+[ext_resource type="Texture2D" uid="uid://ja2y32e372ac" path="res://assets/sprites/crops/corn_seed.png" id="7_kt2xe"]
+[ext_resource type="Texture2D" uid="uid://x3j4klcjkas5" path="res://assets/sprites/crops/radish.png" id="7_mqvkg"]
+[ext_resource type="Texture2D" uid="uid://bqahlv7xmh2te" path="res://assets/sprites/crops/tomato.png" id="9_qojro"]
+[ext_resource type="Texture2D" uid="uid://csiatymt1hh36" path="res://assets/sprites/crops/corn.png" id="11_e31xs"]
+
+[node name="InventoryUI" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -28.0
+offset_right = 28.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_blrk1")
+
+[node name="Container" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="GoldSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -28.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_7hes1")
+
+[node name="GoldLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -27.0
+offset_right = -1.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "50"
+
+[node name="DayLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -27.0
+offset_right = 27.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "day ?"
+
+[node name="CarrotSeedSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -20.0
+offset_right = -20.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_lq4wi")
+
+[node name="CarrotSeedLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -19.0
+offset_right = -1.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "0"
+
+[node name="CarrotSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 8.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_10k6y")
+
+[node name="CarrotLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -19.0
+offset_right = 27.0
+offset_bottom = -13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "0"
+
+[node name="RadishSeedSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -12.0
+offset_right = -20.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_pqhat")
+
+[node name="RadishSeedLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.0
+offset_right = -1.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "0"
+
+[node name="RadishSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -12.0
+offset_right = 8.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_mqvkg")
+
+[node name="RadishLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -11.0
+offset_right = 27.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "0"
+
+[node name="TomatoSeedSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -4.0
+offset_right = -20.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_i62ka")
+
+[node name="TomatoSeedLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -3.0
+offset_right = -1.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "0"
+
+[node name="TomatoSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -4.0
+offset_right = 8.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_qojro")
+
+[node name="TomatoLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = -3.0
+offset_right = 27.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "0"
+
+[node name="CornSeedSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = 4.0
+offset_right = -20.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_kt2xe")
+
+[node name="CornSeedLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 5.0
+offset_right = -1.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "0"
+
+[node name="CornSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_e31xs")
+
+[node name="CornLabel" type="Label" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 8.0
+offset_top = 5.0
+offset_right = 27.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.760784, 0.764706, 0.780392, 1)
+theme_override_constants/line_spacing = 1
+theme_override_fonts/font = ExtResource("2_h84dd")
+theme_override_font_sizes/font_size = 5
+text = "0"
