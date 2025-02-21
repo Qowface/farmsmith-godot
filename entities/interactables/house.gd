@@ -7,3 +7,4 @@ extends StaticBody2D
 func interact():
 	GlobalSignals.show_text_box.emit(sleep_text, true)
 	GlobalSignals.day_ended.emit()
+	GlobalData.day += 1

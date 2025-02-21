@@ -17,6 +17,7 @@ func interact():
 			GlobalSignals.show_dialogue.emit(dialogue_found_boots)
 			sprite.texture = boots_sprite
 			boots_on_frog = true
+			Inventory.frog_boots = true
 		else:
 			GlobalSignals.show_dialogue.emit(dialogue_default)
 	else:

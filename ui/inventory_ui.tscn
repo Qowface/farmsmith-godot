@@ -1,16 +1,23 @@
-[gd_scene load_steps=12 format=3 uid="uid://y6j4dpi11hm0"]
+[gd_scene load_steps=19 format=3 uid="uid://y6j4dpi11hm0"]
 
 [ext_resource type="Script" path="res://ui/inventory_ui.gd" id="1_blrk1"]
 [ext_resource type="FontFile" uid="uid://b1qa2t5gavgfh" path="res://assets/fonts/pico-8-wide-upper.ttf" id="2_h84dd"]
 [ext_resource type="Texture2D" uid="uid://dhrg6jtkydleg" path="res://assets/sprites/crops/carrot.png" id="3_10k6y"]
+[ext_resource type="Texture2D" uid="uid://csq30n8q18min" path="res://assets/sprites/crops/tool_seed.png" id="3_11qjj"]
 [ext_resource type="Texture2D" uid="uid://b3yu7aqnkxxgf" path="res://assets/sprites/ui/gold.png" id="4_7hes1"]
 [ext_resource type="Texture2D" uid="uid://cohtlso5twt8a" path="res://assets/sprites/crops/carrot_seed.png" id="4_lq4wi"]
+[ext_resource type="Texture2D" uid="uid://dfclo7u322emf" path="res://assets/sprites/crops/axe.png" id="4_os7wu"]
+[ext_resource type="Texture2D" uid="uid://4i6w1dj413b8" path="res://assets/sprites/crops/pick.png" id="5_krgd6"]
 [ext_resource type="Texture2D" uid="uid://ckuplj0606rni" path="res://assets/sprites/crops/radish_seed.png" id="5_pqhat"]
+[ext_resource type="Texture2D" uid="uid://dkr5q1hlir5ev" path="res://assets/sprites/crops/rod.png" id="6_admsf"]
 [ext_resource type="Texture2D" uid="uid://bs4f73a8mtsor" path="res://assets/sprites/crops/tomato_seed.png" id="6_i62ka"]
+[ext_resource type="Texture2D" uid="uid://c0f8lrwr118dv" path="res://assets/sprites/interactables/boots.png" id="7_jvuxh"]
 [ext_resource type="Texture2D" uid="uid://ja2y32e372ac" path="res://assets/sprites/crops/corn_seed.png" id="7_kt2xe"]
 [ext_resource type="Texture2D" uid="uid://x3j4klcjkas5" path="res://assets/sprites/crops/radish.png" id="7_mqvkg"]
+[ext_resource type="Texture2D" uid="uid://bvoink52jcoyu" path="res://assets/sprites/interactables/frog_boots.png" id="8_mrc4b"]
 [ext_resource type="Texture2D" uid="uid://bqahlv7xmh2te" path="res://assets/sprites/crops/tomato.png" id="9_qojro"]
 [ext_resource type="Texture2D" uid="uid://csiatymt1hh36" path="res://assets/sprites/crops/corn.png" id="11_e31xs"]
+[ext_resource type="Texture2D" uid="uid://615kmv77mkv0" path="res://assets/sprites/ui/question.png" id="12_iwooc"]
 
 [node name="InventoryUI" type="Control"]
 layout_mode = 3
@@ -26,6 +33,13 @@ offset_bottom = 28.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_blrk1")
+question_sprite = ExtResource("12_iwooc")
+tool_seed_sprite = ExtResource("3_11qjj")
+axe_sprite = ExtResource("4_os7wu")
+pick_sprite = ExtResource("5_krgd6")
+rod_sprite = ExtResource("6_admsf")
+boots_sprite = ExtResource("7_jvuxh")
+frog_boots_sprite = ExtResource("8_mrc4b")
 
 [node name="Container" type="ColorRect" parent="."]
 layout_mode = 1
@@ -355,3 +369,63 @@ theme_override_constants/line_spacing = 1
 theme_override_fonts/font = ExtResource("2_h84dd")
 theme_override_font_sizes/font_size = 5
 text = "0"
+
+[node name="AxeStageSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_iwooc")
+
+[node name="PickStageSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = 20.0
+offset_right = -4.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_iwooc")
+
+[node name="RodStageSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 4.0
+offset_top = 20.0
+offset_right = 12.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_iwooc")
+
+[node name="BootStageSprite" type="TextureRect" parent="Container"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 28.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_iwooc")

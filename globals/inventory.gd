@@ -21,3 +21,4 @@ var pick: bool = false
 var rod_seed: bool = false
 var rod: bool = false
 var boots: bool = false
+var frog_boots: bool = false
