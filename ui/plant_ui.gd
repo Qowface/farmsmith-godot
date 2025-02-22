@@ -27,11 +27,13 @@ func _process(delta: float) -> void:
 		if current_selection < 0:
 			current_selection = option_count - 1
 		update_crop()
+		AudioPlayer.play_sfx("beep")
 	elif Input.is_action_just_pressed("right"):
 		current_selection += 1
 		if current_selection >= option_count:
 			current_selection = 0
 		update_crop()
+		AudioPlayer.play_sfx("beep")
 	
 	if Input.is_action_just_pressed("circle"):
 		var crop = Crops.CROPS[current_selection]
@@ -39,7 +41,10 @@ func _process(delta: float) -> void:
 			plot.plant(crop)
 			Inventory.seeds[crop] -= 1
 			stop_planting()
+		else:
+			AudioPlayer.play_sfx("bump")
 	elif Input.is_action_just_pressed("x"):
+		AudioPlayer.play_sfx("bump")
 		stop_planting()
 
 

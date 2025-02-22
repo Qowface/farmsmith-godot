@@ -33,11 +33,13 @@ func _process(delta: float) -> void:
 		if current_selection < 0:
 			current_selection = option_count - 1
 		update_ui()
+		AudioPlayer.play_sfx("beep")
 	elif Input.is_action_just_pressed("right"):
 		current_selection += 1
 		if current_selection >= option_count:
 			current_selection = 0
 		update_ui()
+		AudioPlayer.play_sfx("beep")
 	
 	if Input.is_action_just_pressed("circle"):
 		var crop = Crops.CROPS[current_selection]
@@ -47,6 +49,7 @@ func _process(delta: float) -> void:
 			buy_seed(crop)
 		update_ui()
 	elif Input.is_action_just_pressed("x"):
+		AudioPlayer.play_sfx("bump")
 		stop_shopping()
 
 
@@ -81,9 +84,15 @@ func buy_seed(crop: Crop):
 	if Inventory.gold >= crop.seed_price:
 		Inventory.gold -= crop.seed_price
 		Inventory.seeds[crop] += 1
+		AudioPlayer.play_sfx("coin")
+	else:
+		AudioPlayer.play_sfx("bump")
 
 
 func sell_crop(crop: Crop):
 	if Inventory.crops[crop] >= 1:
 		Inventory.gold += crop.crop_price
 		Inventory.crops[crop] -= 1
+		AudioPlayer.play_sfx("coin")
+	else:
+		AudioPlayer.play_sfx("bump")

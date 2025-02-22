@@ -20,6 +20,7 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("circle"):
 		if text_box.visible:
 			hide_text_box()
+			AudioPlayer.play_sfx("beep")
 		if current_dialogue:
 			next_dialogue_line()
 

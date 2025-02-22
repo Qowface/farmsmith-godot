@@ -45,6 +45,8 @@ func move(dir):
 		position += INPUTS[dir] * TILE_SIZE
 		moved.emit()
 		return
+	else:
+		AudioPlayer.play_sfx("bump")
 	
 	var target = ray.get_collider()
 	if target and target.has_method("interact"):

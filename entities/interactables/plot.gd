@@ -46,6 +46,7 @@ func plant(_crop: Crop):
 	crop = _crop
 	crop_stage = 1
 	update_sprite()
+	AudioPlayer.play_sfx("plant")
 
 
 func grow():
@@ -67,6 +68,7 @@ func harvest():
 	GlobalSignals.show_text_box.emit(str(crop.name) + "\nget!")
 	crop = null
 	update_sprite()
+	AudioPlayer.play_sfx("harvest")
 
 
 func update_sprite():

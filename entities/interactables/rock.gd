@@ -8,6 +8,7 @@ extends StaticBody2D
 func interact():
 	if Inventory.pick:
 		GlobalSignals.show_text_box.emit(smash_text)
+		AudioPlayer.play_sfx("smash")
 		queue_free()
 	else:
 		GlobalSignals.show_text_box.emit(block_text)
