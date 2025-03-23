@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cd7h7hosom26t"]
 
-[ext_resource type="Script" path="res://entities/interactables/sign.gd" id="1_2qnf2"]
+[ext_resource type="Script" uid="uid://uqxu8k6nhn7v" path="res://entities/interactables/sign.gd" id="1_2qnf2"]
 [ext_resource type="Texture2D" uid="uid://dy6lcxgwie3h2" path="res://assets/sprites/interactables/chicken.png" id="2_7fde5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0j132"]

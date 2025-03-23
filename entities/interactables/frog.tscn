@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://cs02s3t42r67v"]
 
-[ext_resource type="Script" path="res://entities/interactables/frog.gd" id="1_u3iu7"]
+[ext_resource type="Script" uid="uid://oqr7eb8f2qmt" path="res://entities/interactables/frog.gd" id="1_u3iu7"]
 [ext_resource type="Texture2D" uid="uid://dsffiyss3ye38" path="res://assets/sprites/interactables/frog.png" id="1_ue4aa"]
 [ext_resource type="Texture2D" uid="uid://bvoink52jcoyu" path="res://assets/sprites/interactables/frog_boots.png" id="2_wlwgl"]
 [ext_resource type="Resource" uid="uid://im6ofwodokd8" path="res://resources/dialogues/frog_default.tres" id="3_md1jp"]

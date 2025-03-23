@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://k7rf6bayv6pc"]
 
-[ext_resource type="Script" path="res://globals/audio_player.gd" id="1_n7jev"]
+[ext_resource type="Script" uid="uid://bgruux62k3kti" path="res://globals/audio_player.gd" id="1_n7jev"]
 
 [node name="AudioPlayer" type="Node"]
 process_mode = 3

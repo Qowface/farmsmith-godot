@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Crop" load_steps=4 format=3 uid="uid://jy7o8y8wmkaa"]
 
-[ext_resource type="Script" path="res://resources/crops/crop.gd" id="1_lt7lr"]
+[ext_resource type="Script" uid="uid://bdr278syxmdba" path="res://resources/crops/crop.gd" id="1_lt7lr"]
 [ext_resource type="Texture2D" uid="uid://dhrg6jtkydleg" path="res://assets/sprites/crops/carrot.png" id="1_x5q1b"]
 [ext_resource type="Texture2D" uid="uid://cohtlso5twt8a" path="res://assets/sprites/crops/carrot_seed.png" id="3_6pa30"]
 

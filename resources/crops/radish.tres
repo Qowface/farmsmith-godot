@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Crop" load_steps=4 format=3 uid="uid://d2a5au8xgeun"]
 
-[ext_resource type="Script" path="res://resources/crops/crop.gd" id="1_i7c2d"]
+[ext_resource type="Script" uid="uid://bdr278syxmdba" path="res://resources/crops/crop.gd" id="1_i7c2d"]
 [ext_resource type="Texture2D" uid="uid://x3j4klcjkas5" path="res://assets/sprites/crops/radish.png" id="1_nfv3j"]
 [ext_resource type="Texture2D" uid="uid://ckuplj0606rni" path="res://assets/sprites/crops/radish_seed.png" id="3_l64l2"]
 

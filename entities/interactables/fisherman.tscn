@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bfr5dqqfr6p5p"]
 
-[ext_resource type="Script" path="res://entities/interactables/fisherman.gd" id="1_52du0"]
+[ext_resource type="Script" uid="uid://bedibcuany5r3" path="res://entities/interactables/fisherman.gd" id="1_52du0"]
 [ext_resource type="Resource" uid="uid://cchjvnxa1pyix" path="res://resources/dialogues/fisherman_saved.tres" id="2_6gpk2"]
 [ext_resource type="Texture2D" uid="uid://cr66dd1a5y88a" path="res://assets/sprites/interactables/fisherman.png" id="2_smlvv"]
 [ext_resource type="Resource" uid="uid://cawrl7swmg8yr" path="res://resources/dialogues/fisherman_thanks.tres" id="3_5wbrw"]

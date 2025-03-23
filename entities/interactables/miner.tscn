@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://d2yimbd1nrsib"]
 
-[ext_resource type="Script" path="res://entities/interactables/miner.gd" id="1_t4bro"]
+[ext_resource type="Script" uid="uid://c3y2eujymxxlf" path="res://entities/interactables/miner.gd" id="1_t4bro"]
 [ext_resource type="Resource" uid="uid://fucf78eww8e" path="res://resources/dialogues/miner_starting.tres" id="2_5gitn"]
 [ext_resource type="Resource" uid="uid://bx0lt33d1lhsr" path="res://resources/dialogues/miner_no_gold.tres" id="3_poihc"]
 [ext_resource type="Resource" uid="uid://5mc21wi7h6vj" path="res://resources/dialogues/miner_give_gold.tres" id="4_5hkop"]

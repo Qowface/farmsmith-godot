@@ -1,6 +1,6 @@
 [gd_scene load_steps=19 format=3 uid="uid://y6j4dpi11hm0"]
 
-[ext_resource type="Script" path="res://ui/inventory_ui.gd" id="1_blrk1"]
+[ext_resource type="Script" uid="uid://b58uokqwvbsau" path="res://ui/inventory_ui.gd" id="1_blrk1"]
 [ext_resource type="FontFile" uid="uid://b1qa2t5gavgfh" path="res://assets/fonts/pico-8-wide-upper.ttf" id="2_h84dd"]
 [ext_resource type="Texture2D" uid="uid://dhrg6jtkydleg" path="res://assets/sprites/crops/carrot.png" id="3_10k6y"]
 [ext_resource type="Texture2D" uid="uid://csq30n8q18min" path="res://assets/sprites/crops/tool_seed.png" id="3_11qjj"]
